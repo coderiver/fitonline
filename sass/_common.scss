@@ -47,6 +47,7 @@ body{
 }
 
 body{
+	@include transform(translate3d(0,0,0));
 	font: {
 		family: Arial,sans-serif;
 		weight: normal;

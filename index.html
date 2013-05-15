@@ -8,8 +8,9 @@
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<script src="js/jquery.tools.min.js"></script>
 	<script src="js/common.js"></script>
+	<script src="js/datepicker.js"></script>
 </head>
-<body>
+<body class="landing">
 
 <!-- BEGIN  .out-->
 <div class="out">
@@ -61,6 +62,27 @@
 				</ul>
 			</div>
 			<!-- /.header__nav -->
+			<!-- BEGIN .carousel -->
+			<div class="carousel js-carousel">
+			  <div class="carousel__item selected">
+			  	<p>Персональный тренер — <br> <strong>у вас дома!</strong></p>
+			  	<a class="btn btn-order" href="#">Заказать пробное занятие</a>
+			  </div>
+			  <div class="carousel__item">
+			  	<p>Персональный тренер — <br> <strong>ты кто такой?</strong></p>
+			  	<a class="btn btn-order" href="#">Давай, на свидание</a>
+			  </div>
+			  <div class="carousel__item">
+			  	<p>Персональный тренер — <br> <strong>не, не слышал!</strong></p>
+			  	<a class="btn btn-order" href="#">Познакомиться</a>
+			  </div>
+			  <div class="carousel__nav">
+				<span class="active"></span>
+				<span></span>
+				<span></span>
+			  </div>
+			</div>
+			<!-- /.carousel -->
 		</div>
 		<!-- /.header__holder -->
 	</div>
@@ -101,7 +123,8 @@
 				<!-- /.user -->
 				<!-- BEGIN .calendar -->
 				<div class="calendar">
-					<img src="img/calendar.png">
+					<h2 class="h2">Расписание</h2>
+					<div id="simple-calendar"></div>
 				</div>
 				<!-- /.calendar -->
 			</div>
@@ -152,6 +175,7 @@
 				<!-- /.steps__item -->
 			</div>
 			<!-- /.steps -->
+
 		</div>
 		<!-- /.hero__content -->
 	</div>
@@ -781,8 +805,10 @@
 							<div class="success__unit">
 								<!-- BEGIN .success__unit-media -->
 								<div class="success__unit-media">
-									<img src="img/success-1.jpg">
-									<a href="#" class="icon icon-play"></a>
+									<a href="#">
+										<img src="img/success-1.jpg">
+										<i class="icon icon-play"></i>
+									</a>
 									<div class="success__line blue"></div>
 								</div>
 								<!-- /.success__unit-media -->
@@ -805,8 +831,10 @@
 							<div class="success__unit">
 								<!-- BEGIN .success__unit-media -->
 								<div class="success__unit-media">
-									<img src="img/success-2.jpg">
-									<a href="#" class="icon icon-play"></a>
+									<a href="#">
+										<img src="img/success-2.jpg">
+										<i class="icon icon-play"></i>
+									</a>
 									<div class="success__line green"></div>
 								</div>
 								<!-- /.success__unit-media -->
@@ -829,8 +857,10 @@
 							<div class="success__unit">
 								<!-- BEGIN .success__unit-media -->
 								<div class="success__unit-media">
-									<img src="img/success-3.jpg">
-									<a href="#" class="icon icon-play"></a>
+									<a href="#">
+										<img src="img/success-3.jpg">
+										<i class="icon icon-play"></i>
+									</a>
 									<div class="success__line orange"></div>
 								</div>
 								<!-- /.success__unit-media -->
@@ -857,8 +887,10 @@
 							<div class="success__unit">
 								<!-- BEGIN .success__unit-media -->
 								<div class="success__unit-media">
-									<img src="http://i.imgur.com/lwujBui.jpg">
-									<a href="#" class="icon icon-play"></a>
+									<a href="#">
+										<img src="http://i.imgur.com/lwujBui.jpg">
+										<i class="icon icon-play"></i>
+									</a>
 									<div class="success__line blue"></div>
 								</div>
 								<!-- /.success__unit-media -->
@@ -881,8 +913,10 @@
 							<div class="success__unit">
 								<!-- BEGIN .success__unit-media -->
 								<div class="success__unit-media">
-									<img src="http://i.imgur.com/T8ZP4vz.jpg">
-									<a href="#" class="icon icon-play"></a>
+									<a href="#">
+										<img src="http://i.imgur.com/T8ZP4vz.jpg">
+										<i href="#" class="icon icon-play"></i>
+									</a>
 									<div class="success__line green"></div>
 								</div>
 								<!-- /.success__unit-media -->
@@ -905,8 +939,10 @@
 							<div class="success__unit">
 								<!-- BEGIN .success__unit-media -->
 								<div class="success__unit-media">
-									<img src="http://i.imgur.com/lqFDkpU.jpg">
-									<a href="#" class="icon icon-play"></a>
+									<a href="#">
+										<img src="http://i.imgur.com/lqFDkpU.jpg">
+										<i class="icon icon-play"></i>
+									</a>
 									<div class="success__line orange"></div>
 								</div>
 								<!-- /.success__unit-media -->
@@ -932,8 +968,10 @@
 							<div class="success__unit">
 								<!-- BEGIN .success__unit-media -->
 								<div class="success__unit-media">
-									<img src="img/success-1.jpg">
-									<a href="#" class="icon icon-play"></a>
+									<a href="#">
+										<img src="img/success-1.jpg">
+										<i class="icon icon-play"></i>
+									</a>
 									<div class="success__line blue"></div>
 								</div>
 								<!-- /.success__unit-media -->
@@ -956,8 +994,10 @@
 							<div class="success__unit">
 								<!-- BEGIN .success__unit-media -->
 								<div class="success__unit-media">
-									<img src="img/success-2.jpg">
-									<a href="#" class="icon icon-play"></a>
+									<a href="#">
+										<img src="img/success-2.jpg">
+										<i class="icon icon-play"></i>
+									</a>
 									<div class="success__line green"></div>
 								</div>
 								<!-- /.success__unit-media -->
@@ -980,8 +1020,10 @@
 							<div class="success__unit">
 								<!-- BEGIN .success__unit-media -->
 								<div class="success__unit-media">
-									<img src="img/success-3.jpg">
-									<a href="#" class="icon icon-play"></a>
+									<a href="#">
+										<img src="img/success-3.jpg">
+										<i class="icon icon-play"></i>
+									</a>
 									<div class="success__line orange"></div>
 								</div>
 								<!-- /.success__unit-media -->
@@ -1007,8 +1049,10 @@
 							<div class="success__unit">
 								<!-- BEGIN .success__unit-media -->
 								<div class="success__unit-media">
-									<img src="img/success-1.jpg">
-									<a href="#" class="icon icon-play"></a>
+									<a href="#">
+										<img src="img/success-1.jpg">
+										<i class="icon icon-play"></i>
+									</a>
 									<div class="success__line blue"></div>
 								</div>
 								<!-- /.success__unit-media -->
@@ -1031,8 +1075,10 @@
 							<div class="success__unit">
 								<!-- BEGIN .success__unit-media -->
 								<div class="success__unit-media">
-									<img src="img/success-2.jpg">
-									<a href="#" class="icon icon-play"></a>
+									<a href="#">
+										<img src="img/success-2.jpg">
+										<i class="icon icon-play"></i>
+									</a>
 									<div class="success__line green"></div>
 								</div>
 								<!-- /.success__unit-media -->
@@ -1055,8 +1101,10 @@
 							<div class="success__unit">
 								<!-- BEGIN .success__unit-media -->
 								<div class="success__unit-media">
-									<img src="img/success-3.jpg">
-									<a href="#" class="icon icon-play"></a>
+									<a href="#">
+										<img src="img/success-3.jpg">
+										<i class="icon icon-play"></i>
+									</a>
 									<div class="success__line orange"></div>
 								</div>
 								<!-- /.success__unit-media -->

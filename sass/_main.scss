@@ -1,5 +1,7 @@
 @import "lib/base";
 
+//fonts
+
 
 //colors
 $def: #000;
@@ -102,7 +104,7 @@ input{
 //buttons
 .btn{
 	display: inline-block;
-	@include transition(all linear 0.3s);
+	// @include transition(all linear 0.3s);
 }
 	.btn-def{
 		display: inline-block;
@@ -116,11 +118,15 @@ input{
 		padding: 0 20px;
 		background: #fff;
 		text-decoration: none;
-		@include transition(all linear 0.3s);
+		// @include transition(all 0.2s ease-in-out);
 		@include box-shadow(0 1px 2px rgba(0,0,0,.07));
 		&:hover{
 			text-decoration: none;
-			@include box-shadow(0 1px 2px rgba(0,0,0,.3));
+			@include box-shadow(0 1px 1px rgba(0,0,0,.1));
+		}
+		&:active{
+			text-decoration: none;
+			@include box-shadow(inset 0 1px 2px rgba(0,0,0,.1));
 		}
 	}
 	.btn-order{
@@ -133,22 +139,16 @@ input{
 		text-decoration: none;
 		@include border-radius(23px);
 		@include text-shadow(0 -1px 0 #68ac00);
-		@include transition(all 0.2s ease-in-out);
-		@include background-image(linear-gradient(#88c011, #a1d100));
-		// @include box-shadow(0 1px 1px #a1d100);
-		background-position: 0 0;
-		background-size: 150%;
+		// @include transition(all 0.1s ease-in-out);
+		@include background-image(linear-gradient(rgba(161,209,0,1), rgba(136,192,17,1)));
 		&:hover{
 			text-decoration: none;
-			@include transition(all 0.2s ease-in-out);
-			@include box-shadow(inset 0 1px 1px #77a611);
-			background-position: 0 100%;
+			@include background-image(linear-gradient(rgba(161,209,0,.9), rgba(136,192,17,.9)));
+			@include box-shadow(0 1px 1px rgba(0,0,0,.1));
 		}
 		&:active{
 			text-decoration: none;
-			@include transition(all 0.1s ease-in-out);
-			@include box-shadow(inset 0 1px 8px #699210);
-			background-position: 0 100%;
+			@include box-shadow(inset 0 1px 8px rgba(105,146,16,.6));
 		}
 	}
 
@@ -176,9 +176,18 @@ input{
 	@include background-size(100%);
 	// background: url(../img/bg_header.jpg) 50% 0% no-repeat #e7e9e8;
 }
+	//header with large background image
+	body.landing{
+		.header{
+			height: 620px;
+			@extend %clr;
+			background: url(../img/bg_header.jpg) 50% 0% no-repeat #e7e9e8;
+		}
+	}
 	.header__holder{
 		@extend %site;
-		padding-top: 32px;
+		padding-top: 40px;
+		position: relative;
 	}
 	.header__topper{
 		@extend %clr;
@@ -729,6 +738,18 @@ input{
 				display: block;
 				min-width: 300px;
 				max-height: 240px;
+			}
+			a{
+				display: block;
+				.icon-play{
+					opacity: .6;
+					@include transition(all linear 0.3s);
+				}
+				&:hover{
+					.icon-play{
+						opacity: .8;
+					}
+				}
 			}
 		}
 			.success__line{
@@ -1384,8 +1405,21 @@ input{
 }
 
 .calendar{
+	width: 300px;
+	background: #fff;
+	@include border-radius(5px);
+	@include box-shadow(0 1px 1px rgba(0,0,0,.1), inset 0 -2px 0 rgba(0,0,0,.05));
+	overflow: hidden;
+	.h2{
+		font-size: 21px;
+		color: $green;
+		text-align: center;
+		height: 60px;
+		line-height: 60px;
+		margin-bottom: 10px; 
+	}
 	img{
-		display: block; //tmp
+		display: none; //tmp
 	}
 }
 
@@ -1502,7 +1536,7 @@ input{
 				}
 				i {
 					position: absolute;
-					right: 6px;
+					right: 8px;
 					top: 12px;
 					display: inline-block;
 					z-index: 2;
@@ -1522,9 +1556,44 @@ input{
 
 
 
-			// .js-box-item{
-			// 	display: none;
-			// 	&.visible{
-			// 		display: block;
-			// 	}
-			// }
+		.carousel{
+			margin-top: 120px;
+			text-rendering: geometricPrecision;
+		}
+			.carousel__item{
+				display: none;
+				&.selected{
+					display: block;
+				}
+			}
+
+			.carousel__item{
+				height: 200px;
+				position: relative;
+				p{
+					@include text-shadow(0 1px 1px rgba(0,0,0,.5));
+					font-size: 34px;
+					color: #fff;
+					margin-bottom: 40px;
+					line-height: 1;
+					strong{
+						font-size: 70px;
+					}
+				}
+			}
+			.carousel__nav{
+				position: absolute;
+				bottom: -80px;
+				left: 0;
+				span{
+					@include sized-sprite($icons, box_dot);
+					display: inline-block;
+					margin-right: 10px;
+					&:hover{
+						cursor: pointer;
+					}
+					&.active{
+						@include sized-sprite($icons, box_dot_active);
+					}
+				}
+			}

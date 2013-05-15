@@ -13,13 +13,24 @@ $(document).ready(function() {
 			}).navigator();
 		};
 
-		  $('.js-box-nav').each(function() {
+	// ---------- Scroll for blocks in header -------------------- //
+		$('.carousel__nav').each(function() {
 			$(this).find('span').each(function(i) {
-			  $(this).click(function(){
-				$(this).addClass('active').siblings().removeClass('active')
-				  .parents('.js-box').find('.js-box-item').hide().end().find('.js-box-item:eq('+i+')').fadeIn(150);
-			  });
+				$(this).click(function(){
+					$(this).addClass('active').siblings().removeClass('active')
+					.parents('.js-carousel').find('.carousel__item').hide().end().find('.carousel__item:eq('+i+')').fadeIn("fast");
+				});
 			});
-		  });
+		});
+
+
+	// ---------- DATEPICKER -------------------- //
+		$('#simple-calendar').DatePicker({
+		  mode: 'multiple',
+		  inline: true,
+		  // date: new Date()
+		  date: [new Date(), new Date() - 172800000, new Date() - 345600000]
+		});
 
 });
+

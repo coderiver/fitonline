@@ -24,7 +24,7 @@ $(document).ready(function() {
 		});
 
 
-	// ---------- DATEPICKER -------------------- //
+	// ---------- Calendar Datepicker -------------------- //
 		$('#simple-calendar').DatePicker({
 		  mode: 'multiple',
 		  inline: true,

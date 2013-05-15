@@ -1,8 +1,5 @@
 @import "lib/base";
 
-//fonts
-
-
 //colors
 $def: #000;
 $darken: #4b4b4b;
@@ -17,6 +14,14 @@ $orange: #ff9d1d;
 	margin: auto;
 }
 
+// wrapper
+.wrapper{
+	border-top: 1px solid #dcdcdc;
+	border-bottom: 1px solid #ffffff;
+	background: url("../img/bg_success.png");
+	padding: 20px 0;
+}
+
 //headings
 .h1{
 	color: $grey;
@@ -29,6 +34,8 @@ $orange: #ff9d1d;
 	font-weight: normal;
 }
 
+
+//links
 a{
 	color: $blue;
 	text-decoration: none;
@@ -36,6 +43,20 @@ a{
 		text-decoration: underline;
 	}
 }
+	//link
+	.link{
+		line-height: 1;
+		text-decoration: none;
+		font-size: 13px;
+		font-weight: bold;
+		span{
+			display: inline-block;
+			border-bottom: 1px solid #dce7f1;
+			&:hover{
+				border-bottom: 1px solid transparent;
+			}
+		}
+	}
 
 //input
 input{
@@ -77,9 +98,9 @@ input{
 	.icon-take {@include sized-sprite($icons, ico_take);}
 	.icon-choose {@include sized-sprite($icons, ico_choose);}
 	.icon-start {@include sized-sprite($icons, ico_start);}
-	.icon-play {@include sized-sprite($icons, ico_play);} 
+	.icon-play {@include sized-sprite($icons, ico_play);}
 		.icon-play{
-			position: absolute; 
+			position: absolute;
 			top: 50%;
 			left: 50%;
 			content: "";
@@ -99,7 +120,7 @@ input{
 	.icon-tag {@include sized-sprite($icons, ico_tag);}
 	.icon-fb {@include sized-sprite($icons, ico_fb);}
 	.icon-tw {@include sized-sprite($icons, ico_tw);}
-	.icon-vk {@include sized-sprite($icons, ico_vk);} 
+	.icon-vk {@include sized-sprite($icons, ico_vk);}
 
 //buttons
 .btn{
@@ -118,7 +139,6 @@ input{
 		padding: 0 20px;
 		background: #fff;
 		text-decoration: none;
-		// @include transition(all 0.2s ease-in-out);
 		@include box-shadow(0 1px 2px rgba(0,0,0,.07));
 		&:hover{
 			text-decoration: none;
@@ -153,20 +173,6 @@ input{
 	}
 
 
-//link
-.link{
-	line-height: 1;
-	text-decoration: none;
-	font-size: 13px;
-	font-weight: bold;
-	span{
-		display: inline-block;
-		border-bottom: 1px solid #dce7f1;
-		&:hover{
-			border-bottom: 1px solid transparent;
-		}
-	}
-}
 
 // Normally mainpage styles
 //header
@@ -220,6 +226,7 @@ input{
 			float: right;
 			text-align: right;
 		}
+		//profile
 		.profile{
 			display: inline-block;
 			margin-right: 10px;
@@ -260,7 +267,7 @@ input{
 				}
 			}
 		}
-
+		//header__search
 		.header__search{
 			position: relative;
 			display: inline-block;
@@ -348,60 +355,103 @@ input{
 			}
 		}
 	}
-	//breadcrumbs
-	.breadcrumbs{
-		background: #fff;
-		height: 50px;
-		line-height: 50px;
-		color: $grey;
-		ul{
-			@extend %clr;
-			display: inline-block;
+
+//carousel
+.carousel{
+	margin-top: 120px;
+	text-rendering: geometricPrecision;
+}
+	.carousel__item{
+		display: none;
+		&.selected{
+			display: block;
 		}
-		li{
-			position: relative;
-			float: left;
-			margin-right: 20px;
-			list-style: none;
-			&:after{
-				position: absolute;
-				top: 0;
-				right: -14px;
-				content: "\00BB";
-			}
-			&:last-child{
-				margin-right: 0;
-				&:after{
-					content: none;
-				}
-			}
-			&.home{
-				a{
-					color: $blue;
-					font-weight: bold;
-				}
-				.icon{
-					margin-right: 15px;
-					&.icon-home{
-						margin-top: -3px;
-					}
-				}
-			}
-		}
-		a{
-			color: $grey;
-			font-size: 13px;
-			text-decoration: none;
-			&:hover{
-				color: $blue;
+	}
+
+	.carousel__item{
+		height: 200px;
+		position: relative;
+		p{
+			@include text-shadow(0 1px 1px rgba(0,0,0,.5));
+			font-size: 34px;
+			color: #fff;
+			margin-bottom: 40px;
+			line-height: 1;
+			strong{
+				font-size: 70px;
 			}
 		}
 	}
-		.breadcrumbs__holder{
-			@extend %site;
-			position: relative;
+	.carousel__nav{
+		position: absolute;
+		bottom: -80px;
+		left: 0;
+		span{
+			@include sized-sprite($icons, box_dot);
+			display: inline-block;
+			margin-right: 10px;
+			&:hover{
+				cursor: pointer;
+			}
+			&.active{
+				@include sized-sprite($icons, box_dot_active);
+			}
 		}
+	}
 
+//breadcrumbs
+.breadcrumbs{
+	background: #fff;
+	height: 50px;
+	line-height: 50px;
+	color: $grey;
+	ul{
+		@extend %clr;
+		display: inline-block;
+	}
+	li{
+		position: relative;
+		float: left;
+		margin-right: 20px;
+		list-style: none;
+		&:after{
+			position: absolute;
+			top: 0;
+			right: -14px;
+			content: "\00BB";
+		}
+		&:last-child{
+			margin-right: 0;
+			&:after{
+				content: none;
+			}
+		}
+		&.home{
+			a{
+				color: $blue;
+				font-weight: bold;
+			}
+			.icon{
+				margin-right: 15px;
+				&.icon-home{
+					margin-top: -3px;
+				}
+			}
+		}
+	}
+	a{
+		color: $grey;
+		font-size: 13px;
+		text-decoration: none;
+		&:hover{
+			color: $blue;
+		}
+	}
+}
+	.breadcrumbs__holder{
+		@extend %site;
+		position: relative;
+	}
 
 //footer
 .footer{
@@ -525,10 +575,6 @@ input{
 			}
 		}
 
-
-//main
-.main{ }
-
 //hero
 .hero{
 	background: #fff;
@@ -553,272 +599,267 @@ input{
 			}
 		}
 	}
-	//steps
-	.steps{
-		padding-top: 40px; //tmp
-		@extend %clr;
+
+//steps
+.steps{
+	padding-top: 40px; //tmp
+	@extend %clr;
+	width: 940px;
+	margin: 0 auto;
+}
+	.steps__item{
+		float: left;
+		width: 240px;
+		margin-left: 20px;
+		text-align: center;
+		padding: 0 30px;
+		&:first-child{
+			margin-left: 0;
+		}
+		.h1{
+			font-size: 25px;
+			font-weight: normal;
+			line-height: 1;
+			margin-bottom: 1.2em;
+		}
+		p{
+			color: $darken;
+		}
+	}
+		.steps__take{
+			.steps__circle{
+				background: $blue;
+			}
+			.h1{
+				color: $blue;
+			}
+		}
+		.steps__choose{
+			.steps__circle{
+				background: $green;
+			}
+			.h1{
+				color: $green;
+			}
+		}
+		.steps__start{
+			.steps__circle{
+				background: $orange;
+				&:after{
+					content: none;
+				}
+			}
+			.h1{
+				color: $orange;
+			}
+		}
+		.steps__circle{
+			position: relative;
+			width: 117px;
+			height: 117px;
+			background: #f2f2f2;
+			border: 12px solid #f2f2f2;
+			@include border-radius(50%);
+			display: inline-block;
+			margin-bottom: 23px;
+			&:after{
+				position: absolute;
+				top: 50%;
+				right: -146px;
+				margin-top: -7px;
+				content: "";
+				@include sized-sprite($icons, steps_dots);
+			}
+			.icon{
+				position: absolute;
+				content: "";
+				top: 50%;
+				left: 50%;
+			}
+			.icon-take{
+				margin-top: -32px;
+				margin-left: -23px;
+			}
+			.icon-choose{
+				margin-top: -25px;
+				margin-left: -24px;
+			}
+			.icon-start{
+				margin-top: -25px;
+				margin-left: -27px;
+			}
+		}
+
+//content
+.content{
+	background: #f6f6f6;
+	border-top: 1px solid #e6e6e6;
+	.h1{
+		text-align: center;
+		margin-bottom: 25px;
+	}
+}
+	.content__holder{
+		@extend %site;
+		padding: 30px 0;
+	}
+	.content__description{
+		text-align: center;
+		color: $grey;
+		margin-bottom: 40px;
+	}
+
+//success
+.success{
+	padding: 40px 0;
+	@extend %clr;
+	.h1{
+		text-align: center;
+		line-height: 1;
+		margin-bottom: 40px;
+		color: $darken;
+	}
+	.success__wrap{
 		width: 940px;
 		margin: 0 auto;
 	}
-		.steps__item{
-			float: left;
-			width: 240px;
-			margin-left: 20px;
-			text-align: center;
-			padding: 0 30px;
+	.success-nav{
+		cursor: pointer;
+		position: absolute;
+		top: -55px;
+		&.disabled{
+			cursor: default;
+		}
+		&.success-next{
+			right: 0;
+			@include sized-sprite($icons, navi_next);
+		}
+		&.success-prev{
+			left: 0;
+			@include sized-sprite($icons, navi_prev);
+		}
+	}
+	.navi{
+		margin-top: 30px;
+		text-align: center;
+		a{
+			@extend %hide-text;
+			display: inline-block;
+			cursor: pointer;
+			margin-left: 17px;
+			@include sized-sprite($icons, navi_btn);
+			&.active{
+				@include sized-sprite($icons, navi_btn_active);
+			}
 			&:first-child{
 				margin-left: 0;
 			}
-			.h1{
-				font-size: 25px;
-				font-weight: normal;
-				line-height: 1;
-				margin-bottom: 1.2em;
-			}
-			p{
-				color: $darken;
-			}
 		}
-			.steps__take{
-				.steps__circle{
-					background: $blue;
-				}
-				.h1{
-					color: $blue;
-				}
-			}
-			.steps__choose{
-				.steps__circle{
-					background: $green;
-				}
-				.h1{
-					color: $green;
-				}
-			}
-			.steps__start{
-				.steps__circle{
-					background: $orange;
-					&:after{
-						content: none;
-					}
-				}
-				.h1{
-					color: $orange;
-				}
-			}
-			.steps__circle{
-				position: relative;
-				width: 117px;
-				height: 117px;
-				background: #f2f2f2;
-				border: 12px solid #f2f2f2;
-				@include border-radius(50%);
-				display: inline-block;
-				margin-bottom: 23px;
-				&:after{
-					position: absolute;
-					top: 50%;
-					right: -146px;
-					margin-top: -7px;
-					content: "";
-					@include sized-sprite($icons, steps_dots);
-				}
-				.icon{
-					position: absolute;
-					content: "";
-					top: 50%;
-					left: 50%;
-				}
-				.icon-take{
-					margin-top: -32px;
-					margin-left: -23px;
-				}
-				.icon-choose{
-					margin-top: -25px;
-					margin-left: -24px;
-				}
-				.icon-start{
-					margin-top: -25px;
-					margin-left: -27px;
-				}
-			}
-	.wrapper{
-		border-top: 1px solid #dcdcdc;
-		border-bottom: 1px solid #ffffff;
-		background: url("../img/bg_success.png");
-		padding: 20px 0;
 	}
-	//success
-	.success{
-		padding: 40px 0;
+	.success__in{
+		position: relative;
 		@extend %clr;
-		.h1{
-			text-align: center;
-			line-height: 1;
-			margin-bottom: 40px;
-			color: $darken;
-		}
-		.success__wrap{
-			width: 940px;
-			margin: 0 auto;
-		}
-		.success-nav{
-			cursor: pointer;
+	}
+	.success__scroll{
+		float: left;
+		position: relative;
+		overflow: hidden;
+		width: 940px;
+		height: 410px;
+		.success__main {
+			width: 20000em;
 			position: absolute;
-			top: -55px;
-			&.disabled{
-				// opacity: .2;
-				cursor: default;
-			}
-			&.success-next{
-				right: 0;
-				@include sized-sprite($icons, navi_next);
-			}
-			&.success-prev{
-				left: 0;
-				@include sized-sprite($icons, navi_prev);
-			}
+			clear: both;
 		}
-		.navi{
-			margin-top: 30px;
-			text-align: center;
-			a{
-				@extend %hide-text;
-				display: inline-block;
-				cursor: pointer;
-				margin-left: 17px;
-				@include sized-sprite($icons, navi_btn);
-				&.active{
-					@include sized-sprite($icons, navi_btn_active);
-				}
-				&:first-child{
-					margin-left: 0;
-				}
-			}
-		}
-		.success__in{
-			position: relative;
-			@extend %clr;
-		}
-		.success__scroll{
+		.success__items{
 			float: left;
-			position: relative;
-			overflow: hidden;
-			width: 940px;
+		}
+		.success__unit{
+			float: left;
+			background-color: #fff;
+			width: 300px;
 			height: 410px;
-			.success__main {
-				width: 20000em;
-				position: absolute;
-				clear: both;
-			}
-			.success__items{
-				float: left;
-			}
-			.success__unit{
-				float: left;
-				background-color: #fff;
-				width: 300px;
-				height: 410px;
-				margin-right: 20px;
-				@include border-radius(5px);
-				@include box-shadow(
-					0 1px 1px rgba(0,0,0,.1),
-					inset 0 -2px 0 rgba(0,0,0,.05)
-				);
-			}
+			margin-right: 20px;
+			@include border-radius(5px);
+			@include box-shadow(
+				0 1px 1px rgba(0,0,0,.1),
+				inset 0 -2px 0 rgba(0,0,0,.05)
+			);
 		}
-		.success__unit-media{
-			position: relative;
-			height: 240px;
-			overflow: hidden;
+	}
+	.success__unit-media{
+		position: relative;
+		height: 240px;
+		overflow: hidden;
+		border-radius: 5px 5px 0 0;
+		margin-bottom: 20px;
+		img{
 			border-radius: 5px 5px 0 0;
-			margin-bottom: 20px;
-			img{
-				border-radius: 5px 5px 0 0;
-				display: block;
-				min-width: 300px;
-				max-height: 240px;
+			display: block;
+			min-width: 300px;
+			max-height: 240px;
+		}
+		a{
+			display: block;
+			.icon-play{
+				opacity: .6;
+				@include transition(all linear 0.3s);
 			}
-			a{
-				display: block;
+			&:hover{
 				.icon-play{
-					opacity: .6;
-					@include transition(all linear 0.3s);
-				}
-				&:hover{
-					.icon-play{
-						opacity: .8;
-					}
+					opacity: .8;
 				}
 			}
 		}
-			.success__line{
-				position: absolute;
-				bottom: 0;
-				left: 0;
-				content: "";
-				width: 100%;
-				height: 5px;
-				&.blue{
-					background: $blue;
-				}
-				&.green{
-					background: $green;
-				}
-				&.orange{
-					background: $orange;
-				}
+	}
+		.success__line{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			content: "";
+			width: 100%;
+			height: 5px;
+			&.blue{
+				background: $blue;
 			}
-		.success__unit-text{
-			text-align: center;
-			padding: 0 28px;
-			font-size: 15px;
-			color: $darken;
-			line-height: 1.2;
+			&.green{
+				background: $green;
+			}
+			&.orange{
+				background: $orange;
+			}
+		}
+	.success__unit-text{
+		text-align: center;
+		padding: 0 28px;
+		font-size: 15px;
+		color: $darken;
+		line-height: 1.2;
+		overflow: hidden;
+		height: 65px;
+		margin-bottom: 20px;
+	}
+	.success__unit-info{
+		text-align: center;
+		padding: 0 20px;
+		p{
 			overflow: hidden;
-			height: 65px;
-			margin-bottom: 20px;
+			white-space: nowrap;
+			-ms-text-overflow: ellipsis;
+			text-overflow: ellipsis;
 		}
-		.success__unit-info{
-			text-align: center;
-			padding: 0 20px;
-			p{
-				overflow: hidden; 
-				white-space: nowrap;
-				-ms-text-overflow: ellipsis;
-				text-overflow: ellipsis;
-			}
-			strong{
-				font-size: 13px;
-				color: $def;
-				font-weight: bold;
-			}
-			small{
-				font-size: 11px;
-				color: $grey;
-			}
+		strong{
+			font-size: 13px;
+			color: $def;
+			font-weight: bold;
 		}
-	}
-
-	.content{
-		background: #f6f6f6;
-		border-top: 1px solid #e6e6e6;
-		.h1{
-			text-align: center;
-			margin-bottom: 25px;
-		}
-	}
-		.content__holder{
-			@extend %site;
-			padding: 30px 0;
-		}
-		.content__description{
-			text-align: center;
+		small{
+			font-size: 11px;
 			color: $grey;
-			margin-bottom: 40px;
 		}
-
-
+	}
+}
+//trainers
 .trainers{
 	@extend %clr;
 	margin-left: -20px;
@@ -887,9 +928,6 @@ input{
 		color: $grey;
 		font-size: 11px;
 	}
-	// .icon-watch
-	// .icon-comments
-	// .icon-table
 	.trainer__meta{
 		text-align: center;
 		margin-bottom: 10px;
@@ -933,10 +971,8 @@ input{
 		}
 	}
 
-
 //sidebar
 .sidebar{
-
 }
 	//dietologist
 	.dietologist{
@@ -1001,106 +1037,109 @@ input{
 		color: $darken;
 	}
 
-.banner-share{
-	position: relative;
-	@include border-radius(5px);
-	min-height: 110px;
-	background: #fff;
-	overflow: hidden;
-	margin-bottom: 20px;
-	&:after{
-		position: absolute;
-		top: 0;
-		right: 0;
-		background: url("../img/bg_torso.jpg") no-repeat;
-		width: 131px;
-		height: 225px;
-		content: "";
-	}
-	a{
-		font-size: 13px;
-		font-weight: bold;
-		text-decoration: none;
-		&:hover{
-			text-decoration: underline;
-		}
-	}
-}
-	.banner-share__wrap{
-		padding: 15px 0 20px 30px;
-		width: 115px;
-	}
-	.banner-share__text{
-		font-size: 19px;
-		color: #718d85;
-		margin-bottom: 5px;
-	}
 
-.your-trainer{
-	@extend %clr;
-	background: #fff;
-	margin-bottom: 20px;
-	padding-bottom: 10px;
-	@include border-radius(5px);
-	@include box-shadow(
-		0 1px 1px rgba(0,0,0,.1),
-		inset 0 -2px 0 rgba(0,0,0,.05)
-	);
-	a{
-		font-size: 13px;
-		font-weight: bold;
-		text-decoration: none;
-		&:hover{
-			text-decoration: underline;
-		}
-	}
-	.your-trainer__media{
-		display: block;
+	//banner-share
+	.banner-share{
+		position: relative;
+		@include border-radius(5px);
+		min-height: 110px;
+		background: #fff;
 		overflow: hidden;
-		height: 220px;
-		border-radius: 5px 5px 0 0;
-		img{
-			border-radius: 5px 5px 0 0;
-			display: block;
-			min-width: 300px;
-			max-height: 240px;
+		margin-bottom: 20px;
+		&:after{
+			position: absolute;
+			top: 0;
+			right: 0;
+			background: url("../img/bg_torso.jpg") no-repeat;
+			width: 131px;
+			height: 225px;
+			content: "";
 		}
 		a{
-			display: block;
+			font-size: 13px;
+			font-weight: bold;
+			text-decoration: none;
 			&:hover{
 				text-decoration: underline;
 			}
 		}
 	}
-	.your-trainer__info{
-		margin-top: 12px;
-		text-align: center;
-		padding: 0 20px;
-		margin-bottom: 15px;
-		height: auto;
-		line-height: 1.4;
-		div{
+		.banner-share__wrap{
+			padding: 15px 0 20px 30px;
+			width: 115px;
+		}
+		.banner-share__text{
+			font-size: 19px;
+			color: #718d85;
+			margin-bottom: 5px;
+		}
+
+
+	//your-trainer
+	.your-trainer{
+		@extend %clr;
+		background: #fff;
+		margin-bottom: 20px;
+		padding-bottom: 10px;
+		@include border-radius(5px);
+		@include box-shadow(
+			0 1px 1px rgba(0,0,0,.1),
+			inset 0 -2px 0 rgba(0,0,0,.05)
+		);
+		a{
+			font-size: 13px;
+			font-weight: bold;
+			text-decoration: none;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+		.your-trainer__media{
+			display: block;
 			overflow: hidden;
-			white-space: nowrap;
-			-ms-text-overflow: ellipsis;
-			text-overflow: ellipsis;
+			height: 220px;
+			border-radius: 5px 5px 0 0;
+			img{
+				border-radius: 5px 5px 0 0;
+				display: block;
+				min-width: 300px;
+				max-height: 240px;
+			}
+			a{
+				display: block;
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+		}
+		.your-trainer__info{
+			margin-top: 12px;
+			text-align: center;
+			padding: 0 20px;
+			margin-bottom: 15px;
+			height: auto;
+			line-height: 1.4;
+			div{
+				overflow: hidden;
+				white-space: nowrap;
+				-ms-text-overflow: ellipsis;
+				text-overflow: ellipsis;
+			}
+		}
+		.your-trainer__name{
+			font-size: 13px;
+			margin-bottom: 0.5em;
+			font-weight: bold;
+			color: $def;
+		}
+		.your-trainer__position,
+		.your-trainer__age{
+			color: $grey;
+			font-size: 11px;
 		}
 	}
-	.your-trainer__name{
-		font-size: 13px;
-		margin-bottom: 0.5em;
-		font-weight: bold;
-		color: $def;
-	}
-	.your-trainer__position,
-	.your-trainer__age{
-		color: $grey;
-		font-size: 11px;
-	}
-}
 
-
-
+//articles
 .articles{
 	li{
 		&:last-child{
@@ -1197,6 +1236,7 @@ input{
 		}
 	}
 
+//thread
 .thread{
 	position: relative;
 	margin-top: 100px; //tmp
@@ -1345,6 +1385,7 @@ input{
 		color: $grey;
 	}
 
+//cabinet
 .cabinet{
 	padding: 40px 0 30px;
 	.h1{
@@ -1362,7 +1403,24 @@ input{
 		@extend %site;
 	}
 
+//calendar
+.calendar{
+	width: 300px;
+	background: #fff;
+	@include border-radius(5px);
+	@include box-shadow(0 1px 1px rgba(0,0,0,.1), inset 0 -2px 0 rgba(0,0,0,.05));
+	overflow: hidden;
+	.h2{
+		font-size: 21px;
+		color: $green;
+		text-align: center;
+		height: 60px;
+		line-height: 60px;
+		margin-bottom: 10px;
+	}
+}
 
+//user
 .user{
 	@extend %clr;
 	margin-bottom: 20px;
@@ -1404,25 +1462,7 @@ input{
 	}
 }
 
-.calendar{
-	width: 300px;
-	background: #fff;
-	@include border-radius(5px);
-	@include box-shadow(0 1px 1px rgba(0,0,0,.1), inset 0 -2px 0 rgba(0,0,0,.05));
-	overflow: hidden;
-	.h2{
-		font-size: 21px;
-		color: $green;
-		text-align: center;
-		height: 60px;
-		line-height: 60px;
-		margin-bottom: 10px; 
-	}
-	img{
-		display: none; //tmp
-	}
-}
-
+//reg forms
 .reg{
 	width: 940px;
 	margin: 0 auto;
@@ -1552,48 +1592,4 @@ input{
 			}
 			.select__value_trainer{
 				width: 348px;
-			}
-
-
-
-		.carousel{
-			margin-top: 120px;
-			text-rendering: geometricPrecision;
-		}
-			.carousel__item{
-				display: none;
-				&.selected{
-					display: block;
-				}
-			}
-
-			.carousel__item{
-				height: 200px;
-				position: relative;
-				p{
-					@include text-shadow(0 1px 1px rgba(0,0,0,.5));
-					font-size: 34px;
-					color: #fff;
-					margin-bottom: 40px;
-					line-height: 1;
-					strong{
-						font-size: 70px;
-					}
-				}
-			}
-			.carousel__nav{
-				position: absolute;
-				bottom: -80px;
-				left: 0;
-				span{
-					@include sized-sprite($icons, box_dot);
-					display: inline-block;
-					margin-right: 10px;
-					&:hover{
-						cursor: pointer;
-					}
-					&.active{
-						@include sized-sprite($icons, box_dot_active);
-					}
-				}
 			}

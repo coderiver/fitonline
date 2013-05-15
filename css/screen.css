@@ -510,7 +510,7 @@ div.datepicker td.datepickerNotInMonth a:hover { color: #999999; }
 
 a.datepickerGoNext, a.datepickerGoPrev, a.datepickerMonth { text-align: center; float: left; }
 
-div.datepicker th a.datepickerGoNext, div.datepicker th a.datepickerGoPrev { width: 20px; color: #666666; display: none; background: url('../img/icons-sf67d8216b6.png') 0 -766px no-repeat; width: 14px; height: 13px; cursor: pointer; position: absolute; top: 50%; margin-top: -7px; content: ""; }
+div.datepicker th a.datepickerGoNext, div.datepicker th a.datepickerGoPrev { width: 20px; color: #666666; display: none; background: url('../img/icons-sf67d8216b6.png') 0 -766px no-repeat; width: 14px; height: 13px; cursor: pointer; position: absolute; top: 20px; content: ""; }
 
 div.datepicker th a.datepickerGoNext { -moz-transform: rotate(180deg); -o-transform: rotate(180deg); -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand'); zoom: 1; right: 20px; }
 

@@ -862,9 +862,8 @@ input{
 //trainers
 .trainers{
 	@extend %clr;
-	margin-left: -20px;
 	width: 960px;
-	margin: 0 auto;
+	margin-left: -20px;
 }
 	.trainer{
 		list-style: none;
@@ -1239,8 +1238,6 @@ input{
 //thread
 .thread{
 	position: relative;
-	margin-top: 100px; //tmp
-	margin-bottom: 100px; //tmp
 	background: #fff;
 	@include border-radius(5px);
 	padding: 30px 0;

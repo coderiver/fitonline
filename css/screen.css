@@ -274,7 +274,7 @@ input:focus { border: 1px solid #5395c5; border-color: rgba(82, 168, 236, 0.8); 
 .success .success__unit-info strong { font-size: 13px; color: black; font-weight: bold; }
 .success .success__unit-info small { font-size: 11px; color: #757575; }
 
-.trainers { margin-left: -20px; width: 960px; margin: 0 auto; }
+.trainers { width: 960px; margin-left: -20px; }
 
 .trainer { list-style: none; position: relative; float: left; width: 300px; height: 470px; margin: 0 0 20px 20px; background: #fff; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), inset 0 -2px 0 rgba(0, 0, 0, 0.05); -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), inset 0 -2px 0 rgba(0, 0, 0, 0.05); box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), inset 0 -2px 0 rgba(0, 0, 0, 0.05); }
 .trainer .icon-clock { position: absolute; top: -1px; right: 9px; content: ""; }
@@ -362,7 +362,7 @@ input:focus { border: 1px solid #5395c5; border-color: rgba(82, 168, 236, 0.8); 
 .articles__item .articles__tags a { font-size: 11px; color: #8cbe00; text-decoration: none; }
 .articles__item .articles__tags a:hover { text-decoration: underline; }
 
-.thread { position: relative; margin-top: 100px; margin-bottom: 100px; background: #fff; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; padding: 30px 0; }
+.thread { position: relative; background: #fff; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; padding: 30px 0; }
 .thread:before { position: absolute; top: 30px; right: -10px; width: 0px; height: 0px; border-style: solid; border-width: 10px 0 10px 10px; border-color: transparent transparent transparent #fff; content: ""; }
 .thread .h2 { margin-bottom: 30px; padding-left: 30px; }
 .thread li { list-style: none; border-bottom: 1px solid #e6e6e6; position: relative; padding: 35px 0; }

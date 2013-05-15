@@ -124,11 +124,11 @@ div.datepicker th a.datepickerGoPrev {
   content: "";
 }
 div.datepicker th a.datepickerGoNext{
-	left: 20px;
+  @include rotate(180);
+	right: 20px;
 }
 div.datepicker th a.datepickerGoPrev {
-	@include rotate(180);
-	right: 20px;
+	left: 20px;
 }
 div.datepicker th a.datepickerMonth {
   width:114px;

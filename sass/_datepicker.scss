@@ -113,7 +113,7 @@ a.datepickerMonth {
 div.datepicker th a.datepickerGoNext,
 div.datepicker th a.datepickerGoPrev {
   width: 20px;
-  color: #666666;
+  color: #666666; 
   display:none;
   @include sized-sprite($icons, calendar_prev);
   cursor: pointer;

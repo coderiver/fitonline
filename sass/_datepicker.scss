@@ -119,8 +119,7 @@ div.datepicker th a.datepickerGoPrev {
   cursor: pointer;
   @extend %hide-text;
   position: absolute;
-  top: 50%;
-  margin-top: -7px;
+  top: 20px;
   content: "";
 }
 div.datepicker th a.datepickerGoNext{

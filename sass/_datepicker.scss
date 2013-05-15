@@ -242,6 +242,8 @@ div.datepicker table thead tr.datepickerDoW th {
   border: 1px solid #e6e6e6;
 }
 div.datepicker table thead tr.datepickerDoW th {
+	height: 29px;
+	line-height: 29px;
   &:last-child{
   	color: #ffacac;
   }

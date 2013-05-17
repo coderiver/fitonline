@@ -1595,19 +1595,20 @@ input{
 				width: 348px;
 			}
 
-
-//reg__accept
 .reg__accept{
-	display: block;
+	width: 940px;
+	margin: 0 auto;
+	text-align: center;
+}
+//reg__accept
+.reg__accept-holder{
+	display: inline-block;
 	font-size: 13px;
 	color: $grey;
-	position: relative;
-	width: 285px;
-	margin: 20px auto 0;
-	text-align: right;
+	margin-top: 20px;
 	label{
+		position: relative;
 		cursor: pointer;
-		margin-left: 17px;
 	}
 	input{
 		width: 15px;
@@ -1615,7 +1616,7 @@ input{
 		opacity: 0;
 		position: absolute;
 		top: 3px;
-		left: 0;
+		left: -17px;
 		z-index: 2;
 		cursor: pointer;
 	}
@@ -1625,7 +1626,7 @@ input{
 	i{
 		position: absolute;
 		@include sized-sprite($icons, input_ico);
-		left: 0;
+		left: -17px;
 		top: 3px;
 		line-height: 16px;
 	}

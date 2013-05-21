@@ -38,6 +38,8 @@ a img, fieldset { border: none; }
 
 .wrapper { border-top: 1px solid #dcdcdc; border-bottom: 1px solid #ffffff; background: url("../img/bg_success.png"); padding: 20px 0; }
 
+.wrapper_mod { border-top: 1px solid #dcdcdc; background: url("../img/bg_success.png"); padding: 20px 0; }
+
 .h1 { color: #757575; font-size: 32px; font-weight: normal; }
 
 .h2 { color: #757575; font-size: 25px; font-weight: normal; }
@@ -106,8 +108,9 @@ input:focus { border: 1px solid #5395c5; border-color: rgba(82, 168, 236, 0.8); 
 .btn-order:active { text-decoration: none; -webkit-box-shadow: inset 0 1px 8px rgba(105, 146, 16, 0.6); -moz-box-shadow: inset 0 1px 8px rgba(105, 146, 16, 0.6); box-shadow: inset 0 1px 8px rgba(105, 146, 16, 0.6); }
 
 .header { background: url(../img/bg_header2.jpg) no-repeat; -webkit-background-size: 100%; -moz-background-size: 100%; -o-background-size: 100%; background-size: 100%; }
-.header.header__landing { height: 620px; background: url(../img/bg_header.jpg) 50% 0% no-repeat #f5f9f8; }
 .header.header__clean { background: none; }
+
+.header__landing { height: 620px; background: url(../img/bg_header.jpg) 50% 0% no-repeat #f5f9f8; }
 
 .header__holder { padding-top: 40px; position: relative; }
 

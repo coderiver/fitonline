@@ -21,6 +21,11 @@ $orange: #ff9d1d;
 	background: url("../img/bg_success.png");
 	padding: 20px 0;
 }
+.wrapper_mod{
+	border-top: 1px solid #dcdcdc;
+	background: url("../img/bg_success.png");
+	padding: 20px 0;
+}
 
 //headings
 .h1{
@@ -181,14 +186,14 @@ input{
 	background: url(../img/bg_header2.jpg) no-repeat;
 	@include background-size(100%);
 	// background: url(../img/bg_header.jpg) 50% 0% no-repeat #e7e9e8;
-	&.header__landing{
-		height: 620px;
-		background: url(../img/bg_header.jpg) 50% 0% no-repeat #f5f9f8;
-	}
 	&.header__clean{
 		background: none;
 	}
 }
+	.header__landing{
+		height: 620px;
+		background: url(../img/bg_header.jpg) 50% 0% no-repeat #f5f9f8;
+	}
 	//header with large background image
 	.header__holder{
 		@extend %site;

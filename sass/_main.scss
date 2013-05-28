@@ -126,6 +126,11 @@ input{
 	.icon-fb {@include sized-sprite($icons, ico_fb);}
 	.icon-tw {@include sized-sprite($icons, ico_tw);}
 	.icon-vk {@include sized-sprite($icons, ico_vk);}
+	.icon-arr {
+		@include sized-sprite($icons, arr2);
+		margin-top: -4px;
+		margin-right: 10px;
+	}
 
 //buttons
 .btn{
@@ -176,6 +181,12 @@ input{
 			@include box-shadow(inset 0 1px 8px rgba(105,146,16,.6));
 		}
 	}
+	.btn-caro{
+		height: 62px;
+		line-height: 62px;
+		border-radius: 30px;
+		padding: 0 30px;
+	}
 
 
 
@@ -191,14 +202,20 @@ input{
 	}
 }
 	.header__landing{
-		height: 620px;
 		background: url(../img/bg_header.jpg) 50% 0% no-repeat #f5f9f8;
-	} 
+		overflow: hidden;
+	}
+	.header__how{
+		.header__holder{
+			height: 660px;
+		}
+	}
 	//header with large background image
 	.header__holder{
 		@extend %site;
 		padding-top: 40px;
 		position: relative;
+		height: 580px;
 	}
 	.header__topper{
 		@extend %clr;
@@ -282,6 +299,8 @@ input{
 		}
 	//header__nav
 	.header__nav{
+		position: relative;
+		z-index: 100;
 		margin-bottom: 30px;
 		background-color: #fff;
 		@include border-radius(5px);
@@ -367,7 +386,7 @@ input{
 
 //carousel
 .carousel{
-	margin-top: 120px;
+	margin-top: 80px;
 	text-rendering: geometricPrecision;
 }
 	.carousel__item{
@@ -376,24 +395,35 @@ input{
 			display: block;
 		}
 	}
-
+	.carousel__image{
+		position: absolute;
+		img{
+			display: block;
+		}
+	}
 	.carousel__item{
-		height: 200px;
-		position: relative;
 		.carousel__text{
-			@include text-shadow(0 1px 1px rgba(0,0,0,.5));
-			font-size: 34px;
+			position: relative;
+			@include text-shadow(0 1px 1px rgba(0,0,0,.2));
 			color: #fff;
+			font-size: 34px;
 			margin-bottom: 40px;
-			line-height: 1;
+			line-height: 1.4;
 			strong{
 				font-size: 70px;
+				line-height: 1;
+				font-weight: normal;
+			}
+			small{
+				font-size: 25px;
+				line-height: 1.4;
+				display: inline-block;
 			}
 		}
 	}
 	.carousel__nav{
 		position: absolute;
-		bottom: -80px;
+		bottom: 40px;
 		left: 0;
 		span{
 			@include sized-sprite($icons, box_dot);

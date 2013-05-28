@@ -112,7 +112,7 @@ input:focus { border: 1px solid #5395c5; border-color: rgba(82, 168, 236, 0.8); 
 .btn-caro { height: 62px; line-height: 62px; border-radius: 30px; padding: 0 30px; }
 
 .header { background: url(../img/bg_header2.jpg) no-repeat; -webkit-background-size: 100% 100%; -moz-background-size: 100% 100%; -o-background-size: 100% 100%; background-size: 100% 100%; }
-.header.header__clean { background: none; }
+.header .header__holder { height: auto; }
 
 .header__landing { background: url(../img/bg_header.jpg) 50% 0% no-repeat #f5f9f8; overflow: hidden; }
 

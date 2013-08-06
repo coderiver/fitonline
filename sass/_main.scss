@@ -187,6 +187,10 @@ input{
 		border-radius: 30px;
 		padding: 0 30px;
 	}
+	.btn-basket{
+		text-transform: capitalize;
+		color: #7dba00;
+	}
 
 
 
@@ -223,7 +227,6 @@ input{
 	}
 		.header__logo{
 			float: left;
-			width: 540px;
 			min-height: 30px;
 			h1{
 				display: inline-block;
@@ -252,12 +255,11 @@ input{
 		.profile{
 			display: inline-block;
 			margin-right: 10px;
-			height: 30px;
 			.profile__user{
 				position: relative;
 				display: inline-block;
 				vertical-align: top;
-				padding-top: 9px;
+				padding-top: 7px;
 				line-height: 1;
 				.icon{
 					vertical-align: top;
@@ -274,7 +276,7 @@ input{
 						top: 50%;
 						right: 0;
 						content: "";
-						margin-top: 3px;
+						margin-top: 1px;
 					}
 					&:hover{
 						text-decoration: underline;
@@ -465,16 +467,22 @@ input{
 				content: none;
 			}
 		}
+		.icon{
+			margin-right: 15px;
+			&.icon-home{
+				margin-top: -3px;
+			}
+		}
 		&.home{
 			a{
 				color: $blue;
 				font-weight: bold;
 			}
-			.icon{
-				margin-right: 15px;
-				&.icon-home{
-					margin-top: -3px;
-				}
+		}
+		&.active{
+			a{
+				color: $blue;
+				font-weight: bold;
 			}
 		}
 	}
@@ -1666,3 +1674,4 @@ input{
 		line-height: 16px;
 	}
 }
+

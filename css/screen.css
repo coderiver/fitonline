@@ -1,8 +1,8 @@
-.header__logo a, .footer__logo a, .footer__socials a, .success .navi a, div.datepicker th a.datepickerGoNext, div.datepicker th a.datepickerGoPrev { font: 0/0 a; text-shadow: none; color: transparent; }
+.header__logo a, .footer__logo a, .footer__socials a, .success .navi a, .sidebox_pager span, div.datepicker th a.datepickerGoNext, div.datepicker th a.datepickerGoPrev { font: 0/0 a; text-shadow: none; color: transparent; }
 
-.header, .header__topper, .header__nav ul, .breadcrumbs ul, .footer__holder, .footer__nav ul, .footer__count, .footer__socials ul, .steps, .success, .success .success__in, .trainers, .your-trainer, .articles__item, .thread li, .thread__comment, .user, .reg__steps, .label { *zoom: 1; }
-.header:before, .header__topper:before, .header__nav ul:before, .breadcrumbs ul:before, .footer__holder:before, .footer__nav ul:before, .footer__count:before, .footer__socials ul:before, .steps:before, .success:before, .success .success__in:before, .trainers:before, .your-trainer:before, .articles__item:before, .thread li:before, .thread__comment:before, .user:before, .reg__steps:before, .label:before, .header:after, .header__topper:after, .header__nav ul:after, .breadcrumbs ul:after, .footer__holder:after, .footer__nav ul:after, .footer__count:after, .footer__socials ul:after, .steps:after, .success:after, .success .success__in:after, .trainers:after, .your-trainer:after, .articles__item:after, .thread li:after, .thread__comment:after, .user:after, .reg__steps:after, .label:after { content: " "; display: table; }
-.header:after, .header__topper:after, .header__nav ul:after, .breadcrumbs ul:after, .footer__holder:after, .footer__nav ul:after, .footer__count:after, .footer__socials ul:after, .steps:after, .success:after, .success .success__in:after, .trainers:after, .your-trainer:after, .articles__item:after, .thread li:after, .thread__comment:after, .user:after, .reg__steps:after, .label:after { clear: both; }
+.header, .header__topper, .header__nav ul, .breadcrumbs ul, .footer__holder, .footer__nav ul, .footer__count, .footer__socials ul, .steps, .success, .success .success__in, .trainers, .your-trainer, .articles__item, .thread li, .thread__comment, .user, .reg__steps, .label, .superb, .content__text, .basket__item { *zoom: 1; }
+.header:before, .header__topper:before, .header__nav ul:before, .breadcrumbs ul:before, .footer__holder:before, .footer__nav ul:before, .footer__count:before, .footer__socials ul:before, .steps:before, .success:before, .success .success__in:before, .trainers:before, .your-trainer:before, .articles__item:before, .thread li:before, .thread__comment:before, .user:before, .reg__steps:before, .label:before, .superb:before, .content__text:before, .basket__item:before, .header:after, .header__topper:after, .header__nav ul:after, .breadcrumbs ul:after, .footer__holder:after, .footer__nav ul:after, .footer__count:after, .footer__socials ul:after, .steps:after, .success:after, .success .success__in:after, .trainers:after, .your-trainer:after, .articles__item:after, .thread li:after, .thread__comment:after, .user:after, .reg__steps:after, .label:after, .superb:after, .content__text:after, .basket__item:after { content: " "; display: table; }
+.header:after, .header__topper:after, .header__nav ul:after, .breadcrumbs ul:after, .footer__holder:after, .footer__nav ul:after, .footer__count:after, .footer__socials ul:after, .steps:after, .success:after, .success .success__in:after, .trainers:after, .your-trainer:after, .articles__item:after, .thread li:after, .thread__comment:after, .user:after, .reg__steps:after, .label:after, .superb:after, .content__text:after, .basket__item:after { clear: both; }
 
 * { margin: 0; padding: 0; }
 
@@ -17,22 +17,22 @@ body { -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0
 
 a img, fieldset { border: none; }
 
-.header__logo a, .footer__logo a, .footer__socials a, .success .navi a, div.datepicker th a.datepickerGoNext, div.datepicker th a.datepickerGoPrev { font: 0/0 a; text-shadow: none; color: transparent; }
+.header__logo a, .footer__logo a, .footer__socials a, .success .navi a, .sidebox_pager span, div.datepicker th a.datepickerGoNext, div.datepicker th a.datepickerGoPrev { font: 0/0 a; text-shadow: none; color: transparent; }
 
-.header, .header__topper, .header__nav ul, .breadcrumbs ul, .footer__holder, .footer__nav ul, .footer__count, .footer__socials ul, .steps, .success, .success .success__in, .trainers, .your-trainer, .articles__item, .thread li, .thread__comment, .user, .reg__steps, .label { *zoom: 1; }
-.header:before, .header__topper:before, .header__nav ul:before, .breadcrumbs ul:before, .footer__holder:before, .footer__nav ul:before, .footer__count:before, .footer__socials ul:before, .steps:before, .success:before, .success .success__in:before, .trainers:before, .your-trainer:before, .articles__item:before, .thread li:before, .thread__comment:before, .user:before, .reg__steps:before, .label:before, .header:after, .header__topper:after, .header__nav ul:after, .breadcrumbs ul:after, .footer__holder:after, .footer__nav ul:after, .footer__count:after, .footer__socials ul:after, .steps:after, .success:after, .success .success__in:after, .trainers:after, .your-trainer:after, .articles__item:after, .thread li:after, .thread__comment:after, .user:after, .reg__steps:after, .label:after { content: " "; display: table; }
-.header:after, .header__topper:after, .header__nav ul:after, .breadcrumbs ul:after, .footer__holder:after, .footer__nav ul:after, .footer__count:after, .footer__socials ul:after, .steps:after, .success:after, .success .success__in:after, .trainers:after, .your-trainer:after, .articles__item:after, .thread li:after, .thread__comment:after, .user:after, .reg__steps:after, .label:after { clear: both; }
+.header, .header__topper, .header__nav ul, .breadcrumbs ul, .footer__holder, .footer__nav ul, .footer__count, .footer__socials ul, .steps, .success, .success .success__in, .trainers, .your-trainer, .articles__item, .thread li, .thread__comment, .user, .reg__steps, .label, .superb, .content__text, .basket__item { *zoom: 1; }
+.header:before, .header__topper:before, .header__nav ul:before, .breadcrumbs ul:before, .footer__holder:before, .footer__nav ul:before, .footer__count:before, .footer__socials ul:before, .steps:before, .success:before, .success .success__in:before, .trainers:before, .your-trainer:before, .articles__item:before, .thread li:before, .thread__comment:before, .user:before, .reg__steps:before, .label:before, .superb:before, .content__text:before, .basket__item:before, .header:after, .header__topper:after, .header__nav ul:after, .breadcrumbs ul:after, .footer__holder:after, .footer__nav ul:after, .footer__count:after, .footer__socials ul:after, .steps:after, .success:after, .success .success__in:after, .trainers:after, .your-trainer:after, .articles__item:after, .thread li:after, .thread__comment:after, .user:after, .reg__steps:after, .label:after, .superb:after, .content__text:after, .basket__item:after { content: " "; display: table; }
+.header:after, .header__topper:after, .header__nav ul:after, .breadcrumbs ul:after, .footer__holder:after, .footer__nav ul:after, .footer__count:after, .footer__socials ul:after, .steps:after, .success:after, .success .success__in:after, .trainers:after, .your-trainer:after, .articles__item:after, .thread li:after, .thread__comment:after, .user:after, .reg__steps:after, .label:after, .superb:after, .content__text:after, .basket__item:after { clear: both; }
 
 /* default layout */
 .l { width: 100%; display: inline-block; }
 .l .l-col1 { float: left; width: 66%; }
 .l .l-col2 { float: right; width: 300px; }
 
-.header__logo a, .footer__logo a, .footer__socials a, .success .navi a, div.datepicker th a.datepickerGoNext, div.datepicker th a.datepickerGoPrev { font: 0/0 a; text-shadow: none; color: transparent; }
+.header__logo a, .footer__logo a, .footer__socials a, .success .navi a, .sidebox_pager span, div.datepicker th a.datepickerGoNext, div.datepicker th a.datepickerGoPrev { font: 0/0 a; text-shadow: none; color: transparent; }
 
-.header, .header__topper, .header__nav ul, .breadcrumbs ul, .footer__holder, .footer__nav ul, .footer__count, .footer__socials ul, .steps, .success, .success .success__in, .trainers, .your-trainer, .articles__item, .thread li, .thread__comment, .user, .reg__steps, .label { *zoom: 1; }
-.header:before, .header__topper:before, .header__nav ul:before, .breadcrumbs ul:before, .footer__holder:before, .footer__nav ul:before, .footer__count:before, .footer__socials ul:before, .steps:before, .success:before, .success .success__in:before, .trainers:before, .your-trainer:before, .articles__item:before, .thread li:before, .thread__comment:before, .user:before, .reg__steps:before, .label:before, .header:after, .header__topper:after, .header__nav ul:after, .breadcrumbs ul:after, .footer__holder:after, .footer__nav ul:after, .footer__count:after, .footer__socials ul:after, .steps:after, .success:after, .success .success__in:after, .trainers:after, .your-trainer:after, .articles__item:after, .thread li:after, .thread__comment:after, .user:after, .reg__steps:after, .label:after { content: " "; display: table; }
-.header:after, .header__topper:after, .header__nav ul:after, .breadcrumbs ul:after, .footer__holder:after, .footer__nav ul:after, .footer__count:after, .footer__socials ul:after, .steps:after, .success:after, .success .success__in:after, .trainers:after, .your-trainer:after, .articles__item:after, .thread li:after, .thread__comment:after, .user:after, .reg__steps:after, .label:after { clear: both; }
+.header, .header__topper, .header__nav ul, .breadcrumbs ul, .footer__holder, .footer__nav ul, .footer__count, .footer__socials ul, .steps, .success, .success .success__in, .trainers, .your-trainer, .articles__item, .thread li, .thread__comment, .user, .reg__steps, .label, .superb, .content__text, .basket__item { *zoom: 1; }
+.header:before, .header__topper:before, .header__nav ul:before, .breadcrumbs ul:before, .footer__holder:before, .footer__nav ul:before, .footer__count:before, .footer__socials ul:before, .steps:before, .success:before, .success .success__in:before, .trainers:before, .your-trainer:before, .articles__item:before, .thread li:before, .thread__comment:before, .user:before, .reg__steps:before, .label:before, .superb:before, .content__text:before, .basket__item:before, .header:after, .header__topper:after, .header__nav ul:after, .breadcrumbs ul:after, .footer__holder:after, .footer__nav ul:after, .footer__count:after, .footer__socials ul:after, .steps:after, .success:after, .success .success__in:after, .trainers:after, .your-trainer:after, .articles__item:after, .thread li:after, .thread__comment:after, .user:after, .reg__steps:after, .label:after, .superb:after, .content__text:after, .basket__item:after { content: " "; display: table; }
+.header:after, .header__topper:after, .header__nav ul:after, .breadcrumbs ul:after, .footer__holder:after, .footer__nav ul:after, .footer__count:after, .footer__socials ul:after, .steps:after, .success:after, .success .success__in:after, .trainers:after, .your-trainer:after, .articles__item:after, .thread li:after, .thread__comment:after, .user:after, .reg__steps:after, .label:after, .superb:after, .content__text:after, .basket__item:after { clear: both; }
 
 .header__holder, .breadcrumbs__holder, .footer__holder, .hero__holder, .content__holder, .cabinet__holder { width: 940px; margin: auto; }
 
@@ -111,6 +111,8 @@ input:focus { border: 1px solid #5395c5; border-color: rgba(82, 168, 236, 0.8); 
 
 .btn-caro { height: 62px; line-height: 62px; border-radius: 30px; padding: 0 30px; }
 
+.btn-basket { text-transform: capitalize; color: #7dba00; }
+
 .header { background: url(../img/bg_header2.jpg) no-repeat; -webkit-background-size: 100% 100%; -moz-background-size: 100% 100%; -o-background-size: 100% 100%; background-size: 100% 100%; }
 .header .header__holder { height: auto; }
 
@@ -122,18 +124,18 @@ input:focus { border: 1px solid #5395c5; border-color: rgba(82, 168, 236, 0.8); 
 
 .header__topper { margin-bottom: 40px; }
 
-.header__logo { float: left; width: 540px; min-height: 30px; }
+.header__logo { float: left; min-height: 30px; }
 .header__logo h1 { display: inline-block; vertical-align: top; margin-right: 35px; }
 .header__logo a { display: block; background: url('../img/icons-s7017d9c9ad.png') 0 -122px no-repeat; width: 154px; height: 27px; }
 .header__logo p { display: inline-block; vertical-align: top; padding-top: 2px; color: #919191; font-size: 11px; line-height: 1.1; }
 
 .header__other { float: right; text-align: right; }
 
-.profile { display: inline-block; margin-right: 10px; height: 30px; }
-.profile .profile__user { position: relative; display: inline-block; vertical-align: top; padding-top: 9px; line-height: 1; }
+.profile { display: inline-block; margin-right: 10px; }
+.profile .profile__user { position: relative; display: inline-block; vertical-align: top; padding-top: 7px; line-height: 1; }
 .profile .profile__user .icon { vertical-align: top; margin-right: 6px; }
 .profile .profile__user a { color: #5395c5; font-size: 13px; font-weight: bold; padding-right: 15px; }
-.profile .profile__user a:after { background: url('../img/icons-s7017d9c9ad.png') 0 -1096px no-repeat; width: 7px; height: 4px; position: absolute; top: 50%; right: 0; content: ""; margin-top: 3px; }
+.profile .profile__user a:after { background: url('../img/icons-s7017d9c9ad.png') 0 -1096px no-repeat; width: 7px; height: 4px; position: absolute; top: 50%; right: 0; content: ""; margin-top: 1px; }
 .profile .profile__user a:hover { text-decoration: underline; }
 .profile .profile__enter { margin-left: 10px; display: inline-block; }
 .profile .profile__enter .icon-key { margin-right: 7px; }
@@ -179,9 +181,10 @@ input:focus { border: 1px solid #5395c5; border-color: rgba(82, 168, 236, 0.8); 
 .breadcrumbs li:after { position: absolute; top: 0; right: -14px; content: "\00BB"; }
 .breadcrumbs li:last-child { margin-right: 0; }
 .breadcrumbs li:last-child:after { content: none; }
+.breadcrumbs li .icon { margin-right: 15px; }
+.breadcrumbs li .icon.icon-home { margin-top: -3px; }
 .breadcrumbs li.home a { color: #5395c5; font-weight: bold; }
-.breadcrumbs li.home .icon { margin-right: 15px; }
-.breadcrumbs li.home .icon.icon-home { margin-top: -3px; }
+.breadcrumbs li.active a { color: #5395c5; font-weight: bold; }
 .breadcrumbs a { color: #757575; font-size: 13px; text-decoration: none; }
 .breadcrumbs a:hover { color: #5395c5; }
 
@@ -481,11 +484,138 @@ input:focus { border: 1px solid #5395c5; border-color: rgba(82, 168, 236, 0.8); 
 .reg__accept-holder input:checked + i { background: url('../img/icons-s7017d9c9ad.png') 0 -462px no-repeat; width: 11px; height: 12px; }
 .reg__accept-holder i { position: absolute; background: url('../img/icons-s7017d9c9ad.png') 0 -670px no-repeat; width: 11px; height: 12px; left: -17px; top: 3px; line-height: 16px; }
 
-.header__logo a, .footer__logo a, .footer__socials a, .success .navi a, div.datepicker th a.datepickerGoNext, div.datepicker th a.datepickerGoPrev { font: 0/0 a; text-shadow: none; color: transparent; }
+.header__logo a, .footer__logo a, .footer__socials a, .success .navi a, .sidebox_pager span, div.datepicker th a.datepickerGoNext, div.datepicker th a.datepickerGoPrev { font: 0/0 a; text-shadow: none; color: transparent; }
 
-.header, .header__topper, .header__nav ul, .breadcrumbs ul, .footer__holder, .footer__nav ul, .footer__count, .footer__socials ul, .steps, .success, .success .success__in, .trainers, .your-trainer, .articles__item, .thread li, .thread__comment, .user, .reg__steps, .label { *zoom: 1; }
-.header:before, .header__topper:before, .header__nav ul:before, .breadcrumbs ul:before, .footer__holder:before, .footer__nav ul:before, .footer__count:before, .footer__socials ul:before, .steps:before, .success:before, .success .success__in:before, .trainers:before, .your-trainer:before, .articles__item:before, .thread li:before, .thread__comment:before, .user:before, .reg__steps:before, .label:before, .header:after, .header__topper:after, .header__nav ul:after, .breadcrumbs ul:after, .footer__holder:after, .footer__nav ul:after, .footer__count:after, .footer__socials ul:after, .steps:after, .success:after, .success .success__in:after, .trainers:after, .your-trainer:after, .articles__item:after, .thread li:after, .thread__comment:after, .user:after, .reg__steps:after, .label:after { content: " "; display: table; }
-.header:after, .header__topper:after, .header__nav ul:after, .breadcrumbs ul:after, .footer__holder:after, .footer__nav ul:after, .footer__count:after, .footer__socials ul:after, .steps:after, .success:after, .success .success__in:after, .trainers:after, .your-trainer:after, .articles__item:after, .thread li:after, .thread__comment:after, .user:after, .reg__steps:after, .label:after { clear: both; }
+.header, .header__topper, .header__nav ul, .breadcrumbs ul, .footer__holder, .footer__nav ul, .footer__count, .footer__socials ul, .steps, .success, .success .success__in, .trainers, .your-trainer, .articles__item, .thread li, .thread__comment, .user, .reg__steps, .label, .superb, .content__text, .basket__item { *zoom: 1; }
+.header:before, .header__topper:before, .header__nav ul:before, .breadcrumbs ul:before, .footer__holder:before, .footer__nav ul:before, .footer__count:before, .footer__socials ul:before, .steps:before, .success:before, .success .success__in:before, .trainers:before, .your-trainer:before, .articles__item:before, .thread li:before, .thread__comment:before, .user:before, .reg__steps:before, .label:before, .superb:before, .content__text:before, .basket__item:before, .header:after, .header__topper:after, .header__nav ul:after, .breadcrumbs ul:after, .footer__holder:after, .footer__nav ul:after, .footer__count:after, .footer__socials ul:after, .steps:after, .success:after, .success .success__in:after, .trainers:after, .your-trainer:after, .articles__item:after, .thread li:after, .thread__comment:after, .user:after, .reg__steps:after, .label:after, .superb:after, .content__text:after, .basket__item:after { content: " "; display: table; }
+.header:after, .header__topper:after, .header__nav ul:after, .breadcrumbs ul:after, .footer__holder:after, .footer__nav ul:after, .footer__count:after, .footer__socials ul:after, .steps:after, .success:after, .success .success__in:after, .trainers:after, .your-trainer:after, .articles__item:after, .thread li:after, .thread__comment:after, .user:after, .reg__steps:after, .label:after, .superb:after, .content__text:after, .basket__item:after { clear: both; }
+
+.basket__button { display: inline-block; vertical-align: top; margin-left: 10px; margin-top: -2px; }
+
+.sidebox { position: relative; background: #fff; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), inset 0 -2px 0 rgba(0, 0, 0, 0.05); -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), inset 0 -2px 0 rgba(0, 0, 0, 0.05); box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), inset 0 -2px 0 rgba(0, 0, 0, 0.05); padding: 35px 0 45px; text-align: center; margin-bottom: 20px; }
+.sidebox .h2 { font-size: 21px; color: #8cbe00; margin: 0 auto 15px; width: 75%; line-height: 1.2; text-align: center; }
+.sidebox:before { position: absolute; content: ""; top: -9px; left: 50%; margin-left: -15px; background: url('../img/icons-s7017d9c9ad.png') 0 -229px no-repeat; width: 31px; height: 30px; }
+.sidebox .h2 { color: #5395c5; }
+
+.sidebox__button { text-align: center; }
+
+.sidebox_product { width: 230px; margin: 0 auto 15px; }
+
+.sidebox_pager span { background: url('../img/icons-s7017d9c9ad.png') 0 -648px no-repeat; width: 11px; height: 12px; display: inline-block; margin-left: 13px; }
+.sidebox_pager span:first-child { margin-left: 0; }
+.sidebox_pager span:hover { cursor: pointer; }
+.sidebox_pager .cycle-pager-active { background: url('../img/icons-s7017d9c9ad.png') 0 -926px no-repeat; width: 11px; height: 12px; }
+
+.sidebox_slide a { display: block; }
+.sidebox_slide img { max-width: 230px; }
+
+.superb { margin-left: -20px; list-style-type: none; }
+
+.superb__item { float: left; width: 300px; height: 470px; margin-left: 20px; margin-bottom: 20px; background-color: #fff; text-align: center; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), inset 0 -2px 0 rgba(0, 0, 0, 0.05); -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), inset 0 -2px 0 rgba(0, 0, 0, 0.05); box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), inset 0 -2px 0 rgba(0, 0, 0, 0.05); }
+
+.superb__media { display: block; height: 240px; overflow: hidden; border-radius: 5px 5px 0 0; margin-bottom: 20px; }
+.superb__media img { display: block; min-width: 300px; max-height: 240px; }
+.superb__media a { display: block; }
+
+.superb__info { display: block; padding: 0 20px; margin-bottom: 10px; line-height: 1.8; text-decoration: none; }
+.superb__info p { color: #757575; font-size: 11px; }
+.superb__info .superb__title { font-size: 13px; font-weight: bold; color: black; }
+.superb__info:hover { text-decoration: none; }
+
+.superb__meta { margin-bottom: 10px; }
+
+.superb__price { font-size: 13px; color: #5395c5; font-weight: bold; }
+
+.superb__button { text-transform: uppercase; margin-bottom: 10px; }
+
+.superb__rent { font-size: 13px; font-weight: bold; color: #8cbe00; }
+.superb__rent a { color: #8cbe00; text-decoration: none; border: 1px solid #e3efd4; border-width: 0 0 1px 0; }
+.superb__rent a:hover { text-decoration: none; border: 1px solid transparent; border-width: 0 0 1px 0; }
+
+.pagination { display: block; text-align: center; line-height: 1; margin: 30px 0; }
+.pagination ul { margin-left: -17px; }
+.pagination li { display: inline-block; margin-left: 17px; font-size: 0; }
+.pagination a { font-size: 13px; text-decoration: none; color: #757575; }
+.pagination a:hover { color: #5395c5; text-decoration: none; }
+.pagination .is-active { font-weight: bold; }
+.pagination .is-active a { color: #5395c5; }
+
+.label_category { margin-bottom: 50px; }
+.label_category .label__title { text-align: left; width: 140px; }
+
+.h1_mod { margin-bottom: 35px; }
+
+.content__text { font-size: 14px; color: #757575; }
+
+.content__image { float: left; margin-right: 20px; width: 380px; height: 400px; background-color: #fff; overflow: hidden; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), inset 0 -2px 0 rgba(0, 0, 0, 0.05); -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), inset 0 -2px 0 rgba(0, 0, 0, 0.05); box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), inset 0 -2px 0 rgba(0, 0, 0, 0.05); }
+.content__image img { display: block; max-width: 380px; min-height: 395px; }
+
+.content__info { overflow: hidden; }
+.content__info p { margin-bottom: 1em; }
+.content__info ul { margin-bottom: 1em; list-style-type: none; }
+
+.content__meta { clear: both; font-size: 11px; padding-top: 40px; margin-bottom: 120px; }
+.content__meta p { margin-bottom: 1em; }
+.content__meta li { list-style-type: none; margin-left: 10px; }
+
+.subtitle { font-weight: bold; color: #5395c5; font-size: 14px; }
+
+.content__price { font-size: 19px; font-weight: bold; color: #5395c5; margin-bottom: 1.4em; margin-top: 2.2em; }
+
+.content__buttons .btn { text-transform: uppercase; margin-right: 40px; padding: 0 55px; }
+.content__buttons .btn-rent { font-weight: bold; font-size: 13px; color: #5395c5; text-decoration: none; border-bottom: 1px solid #d5e0ea; }
+.content__buttons .btn-rent:hover { text-decoration: none; border-bottom: 1px solid transparent; }
+
+.banner-ask { position: relative; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; min-height: 110px; background: #fff; overflow: hidden; margin-bottom: 20px; }
+.banner-ask:after { position: absolute; top: -30px; right: 0; background: url("../img/bg_ask.jpg") no-repeat; width: 153px; height: 160px; content: ""; }
+.banner-ask a { font-size: 13px; font-weight: bold; text-decoration: none; }
+.banner-ask a:hover { text-decoration: underline; }
+
+.banner-ask__wrap { padding: 15px 0 20px 30px; position: relative; z-index: 100; }
+
+.banner-ask__text { font-size: 19px; color: #718d85; margin-bottom: 30px; }
+
+.basket__item { background: #fff; margin-bottom: 20px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; list-style: none; }
+
+.basket__media { float: left; overflow: hidden; min-height: 150px; width: 160px; margin-right: 30px; }
+.basket__media img { display: block; -webkit-border-radius: 5px 0 0 5px; -moz-border-radius: 5px 0 0 5px; -ms-border-radius: 5px 0 0 5px; -o-border-radius: 5px 0 0 5px; border-radius: 5px 0 0 5px; }
+.basket__media a { display: block; }
+
+.basket__info { position: relative; overflow: hidden; padding: 18px 50px 11px 0; font-size: 13px; }
+
+.basket__title { font-size: 13px; font-weight: bold; color: black; margin-bottom: 0.2em; }
+.basket__title a { color: black; text-decoration: none; }
+.basket__title a:hover { text-decoration: underline; }
+
+.basket__param { font-size: 11px; list-style-type: none; color: #757575; }
+.basket__param li { margin-bottom: 0.2em; }
+
+.basket__price { font-weight: bold; color: #5395c5; margin: .8em 0; }
+.basket__price a { color: #5395c5; text-decoration: none; }
+.basket__price a:hover { text-decoration: underline; }
+
+.basket__rent { font-weight: bold; color: #8cbe00; }
+.basket__rent a { text-decoration: none; color: #8cbe00; }
+.basket__rent a:hover { text-decoration: underline; }
+
+.basket_delete { position: absolute; bottom: 10px; right: 30px; font-weight: bold; color: #757575; border-bottom: 1px solid #e3e3e3; text-decoration: none; }
+.basket_delete:hover { border-bottom: 1px solid transparent; text-decoration: none; }
+
+.sidebox_order .h2 { color: #8cbe00; margin: 0 auto 30px; }
+.sidebox_order .sidebox__content { width: 270px; margin: 0 auto 35px; }
+.sidebox_order .btn-order { padding: 0 55px; }
+
+.label_order { margin-bottom: 20px; }
+.label_order .label__title { display: block; float: none; width: auto; min-height: 1px; line-height: 1; margin-right: 0; text-align: center; color: #4b4b4b; font-size: 15px; margin-bottom: 15px; }
+.label_order .label__field { float: none; display: block; }
+.label_order .label__field .input-text { width: 238px; float: none; }
+.label_order .select__value { width: 238px; }
+
+.header__logo a, .footer__logo a, .footer__socials a, .success .navi a, .sidebox_pager span, div.datepicker th a.datepickerGoNext, div.datepicker th a.datepickerGoPrev { font: 0/0 a; text-shadow: none; color: transparent; }
+
+.header, .header__topper, .header__nav ul, .breadcrumbs ul, .footer__holder, .footer__nav ul, .footer__count, .footer__socials ul, .steps, .success, .success .success__in, .trainers, .your-trainer, .articles__item, .thread li, .thread__comment, .user, .reg__steps, .label, .superb, .content__text, .basket__item { *zoom: 1; }
+.header:before, .header__topper:before, .header__nav ul:before, .breadcrumbs ul:before, .footer__holder:before, .footer__nav ul:before, .footer__count:before, .footer__socials ul:before, .steps:before, .success:before, .success .success__in:before, .trainers:before, .your-trainer:before, .articles__item:before, .thread li:before, .thread__comment:before, .user:before, .reg__steps:before, .label:before, .superb:before, .content__text:before, .basket__item:before, .header:after, .header__topper:after, .header__nav ul:after, .breadcrumbs ul:after, .footer__holder:after, .footer__nav ul:after, .footer__count:after, .footer__socials ul:after, .steps:after, .success:after, .success .success__in:after, .trainers:after, .your-trainer:after, .articles__item:after, .thread li:after, .thread__comment:after, .user:after, .reg__steps:after, .label:after, .superb:after, .content__text:after, .basket__item:after { content: " "; display: table; }
+.header:after, .header__topper:after, .header__nav ul:after, .breadcrumbs ul:after, .footer__holder:after, .footer__nav ul:after, .footer__count:after, .footer__socials ul:after, .steps:after, .success:after, .success .success__in:after, .trainers:after, .your-trainer:after, .articles__item:after, .thread li:after, .thread__comment:after, .user:after, .reg__steps:after, .label:after, .superb:after, .content__text:after, .basket__item:after { clear: both; }
 
 div.datepicker { position: relative; font-size: 13px; width: 196px; height: 147px; position: absolute; cursor: default; top: 0; left: 0; display: none; }
 

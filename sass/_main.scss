@@ -316,7 +316,6 @@ input{
 		li{
 			position: relative;
 			float: left;
-			width: 20%;
 			list-style: none;
 			text-align: center;
 			height: 60px;
@@ -367,6 +366,7 @@ input{
 		a{
 			display: block;
 			color: $grey;
+			padding: 0 24px;
 			font-size: 15px;
 			font-weight: bold;
 			text-decoration: none;
